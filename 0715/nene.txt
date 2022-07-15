@@ -1,0 +1,4 @@
+1일 1공부 
+cd -> 내가 원하는 폴더로 이동하기!
+git 
+pull -> commit -> push
