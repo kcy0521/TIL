@@ -1,0 +1,37 @@
+.box1 {
+    width: 800px;
+    height: 100px;
+    font-size: 0px;
+}
+
+.box1 > div {
+    width: 98px;
+    height: 98px;
+    border: 1px solid black;
+    display: inline-block;   
+}
+
+.box1:nth-of-type(2n-1) > div:nth-of-type(2n) {
+    background-color: black;
+}
+.box1:nth-of-type(2n) > div:nth-of-type(2n-1) {
+    background-color: black;
+}
+
+.white_king {
+    background-size: cover; /*요소의 크기에 맞게 이미지를 조절*/ 
+    background-image: url('white_king.png');
+}
+
+.white_rook {
+    background: cover; 
+    background-image: url('white_rook.png');
+}
+.white_queen {
+    background-size: cover; 
+    background-image: url('white_queen.png');
+}
+.black_pawn {
+    background-size: cover; 
+    background-image: url('black_pawn.png');
+}
