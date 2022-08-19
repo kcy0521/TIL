@@ -17,5 +17,17 @@
 # K = list(range(400))
 #
 # print(search(K,400,350))
+def f(x):
+    arr2 = [[0]*N for _ in range(N)]
+    for i in range(N):
+        for j in range(N):
+          arr2[i][j] = x[N-1-j][i]
+    return arr2
 
-print(30 // 10)
+
+N = int(input())
+
+arr = [list(map(int, input().split())) for _ in range(N)]
+
+print(f(f(f(arr))))
+
