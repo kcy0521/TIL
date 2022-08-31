@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Throw</h1>
+<form action="{% url 'catch' %}" method="GET">
+    <label for="message">메세지 던지기</label>
+    <input type="text" id="message" name="message"> 
+    {% comment %} name 태그가 주소창에 나타나는 것이 된다.
+    매우 중요하다고 계속 강조한다.
+     {% endcomment %}
+    <input type="submit">
+
+    <a href="{% url 'index' %}">뒤로</a>
+</form>
+{% endblock content %}
+
+
