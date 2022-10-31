@@ -47,7 +47,7 @@ def signup(request):
         
         if form.is_valid():
             user = form.save()
-            login(request.user)
+            auth_login(request, user)
             return redirect('articles:index')
 
     else:
