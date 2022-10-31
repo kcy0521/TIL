@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="title">DOM 조작</h1>
+  <p class="text">querySelector</p>
+  <p class="text">querySelectorAll</p>
+  <ul>
+    <li>Javascript</li>
+    <li>Python</li>
+  </ul>
+
+  <script>
+    console.log(document.querySelector('#title'))
+    console.log(document.querySelectorAll('.text'))
+    
+    console.log(document.querySelector('.text'));
+    console.log(document.querySelectorAll('body > ul > li'));
+    // 아이디나 클래스만 잘 설정되어있다면 문제없음
+    liTags = document.querySelectorAll('body > ul > li')
+
+    liTags.forEach(element => {
+      console.log(element)
+    });
+    // 저위에 파이썬 자바로 바뀌면 liTags 는 실시간으로 적용되지 않는다. 
+    // 실시간으로 반영되는 타입도 있음 -> 오늘은 안함
+    // queryselector로 가지고오는건 정적 노드리스를 반환한다.
+    // 한노드를 특정부모의 자식 리스중 마지막 자식으로 삽입
+    // Node.appendChild()
+    // Node.remove()
+  </script>
+</body>
+</html>

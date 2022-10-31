@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>인기 영화들</h1>
+    <ul>
+        
+    </ul>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    const url = 'https://api.themoviedb.org/3/movie/popular?api_key=26d62e3c281f1d6512b2a51fffbd9224&language=ko-KR&page=1'
+    const ul = document.querySelector('ul')
+    
+    
+    axios.get(url)
+    .then((response) => {
+        // console.log(response.data)
+        console.log(response.data.results)
+        // const average = response.data.results.filter(movie => movie.vote_average >= 7)
+        console.log(response.data.results.length);
+        for(let i = 0; i < response.data.results.length; i++ ) {
+            if(  response.data.results[i].vote_average>= 7) {
+                const li = document.createElement('li')
+                li.innerText = response.data.results[i].title
+                ul.appendChild(li)
+            }}}) 
+    
+</script>
+</html>
+<!-- API_KEY = 26d62e3c281f1d6512b2a51fffbd9224 -->
