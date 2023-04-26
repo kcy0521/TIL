@@ -9,3 +9,29 @@
 4. SPA vs MPA
 	SEO (search engine optimize) -> SPA단점 마케팅이 힘들다.
 5. CSR vs SSR(SEO문제점 해결하기 위해 나옴/NEXT.js)
+6. 객체 지향형 
+----
+## [포트폴리오 기반]
+	리엑트 네이티브(os에 직접 요청)
+		앱 -> os요청 -> 내용을 보여줌
+	플러터 장점 : 커스터 마이징
+		앱-> 엔진 -> 내용을 보여줌 
+## 역할(ex)
+역할
+- Fronted
+- 카카오 로그인, HOT 키워드, 북마크 기반
+- 반응형 구현
+- 프로젝트 기획및 일정 관리
+- ui/ux 디자인 담당
+
+사용기술
+- typescripts
+- react
+- msW
+- git,jira,figma
+----
+디자인 서비스 ? 이건 뭔말임
+
+orm 이란 무엇인가?
+
+프레임워크는 무엇인가요?
