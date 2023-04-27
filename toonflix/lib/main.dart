@@ -135,7 +135,7 @@ class App extends StatelessWidget {
                   amount: "428",
                   icon: Icons.attach_money_outlined,
                   isInverted: false,
-                  order: 4,
+                  order: 2,
                 ),
               ],
             ),
